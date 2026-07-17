@@ -1,0 +1,107 @@
+Updated Systematic Review and Meta-analysis of the Efficacy and Safety of Peroral Endoscopic Myotomy in Achalasia Patients with Failed Previous Interventions
+
+Background
+Achalasia is a rare primary esophageal motility disorder characterized by impaired relaxation of the lower esophageal sphincter and absent esophageal peristalsis. While treatment modalities such as pneumatic dilation, laparoscopic Heller myotomy, botulinum toxin injection, and prior peroral endoscopic myotomy (POEM) provide symptomatic relief, treatment failure remains a significant clinical challenge, necessitating salvage interventions.
+Peroral endoscopic myotomy has emerged as an effective minimally invasive option for patients with persistent or recurrent symptoms following previous interventions. In 2021, Tan et al. published the first comprehensive systematic review and meta-analysis evaluating the efficacy and safety of POEM in patients with failed prior treatment. Their review included studies published through 2019 and demonstrated high technical and clinical success with acceptable adverse event rates.
+Since then, numerous additional studies with larger cohorts and longer follow-up periods have been published. Preliminary literature screening has identified at least fifteen eligible studies published after 2019, representing approximately a 36% increase in cumulative sample size compared with the previous review. These newer studies may substantially improve the precision of pooled estimates and provide updated evidence regarding clinical efficacy, durability, adverse events, and reflux outcomes.
+An updated systematic review and meta-analysis is therefore warranted.
+
+
+
+
+PICO
+Population
+Patients with achalasia who previously underwent any one or more failed therapeutic interventions.
+Intervention
+Salvage Peroral endoscopic myotomy (POEM).
+Comparator
+Where available:
+●	Treatment-naïve patients
+●	Alternative salvage procedures
+●	Different prior intervention groups
+Studies without comparators are also eligible.
+Outcomes
+Primary outcomes:
+●	Technical success
+●	Clinical success
+Secondary outcomes:
+●	Will be decided on the reporting frequency of the screened literature.
+
+Eligibility Criteria
+Inclusion Criteria
+●	Adult patients with achalasia
+●	Previous failed intervention before POEM
+●	Original clinical studies
+●	Prospective or retrospective cohort studies
+●	Randomized trials
+●	Studies reporting at least one outcome of interest
+Exclusion Criteria
+●	Case reports
+●	Case series with fewer than 10 patients
+●	Reviews
+●	Editorials
+●	Conference abstracts without sufficient data
+●	Animal studies
+●	Pediatric-only populations
+Information Sources
+The following databases will be searched:
+●	PubMed/MEDLINE
+●	Embase
+●	Scopus
+●	Web of Science
+●	Cochrane Library
+Reference lists of included studies and previous systematic reviews will also be screened.
+
+Search Strategy
+Searches will combine controlled vocabulary and free-text terms related to:
+●	Achalasia
+●	Peroral endoscopic myotomy
+●	POEM
+●	Failed treatment
+●	Recurrent achalasia
+●	Salvage therapy
+●	Redo POEM
+●	Prior intervention
+No language restrictions will be applied where feasible.
+
+Study Selection
+The review process will be reported according to PRISMA 2020 guidelines.
+Two independent reviewers will screen titles and abstracts, followed by full-text assessment. Disagreements will be resolved through consensus or consultation with a third reviewer. Invite Link to the screening software has been sent to the relevant authors.
+
+Data Extraction
+Data extracted will include:
+●	Study characteristics
+●	Country
+●	Study design
+●	Enrollment period
+●	Sample size
+●	Mean age
+●	Sex
+●	Achalasia subtype
+●	Previous intervention type
+●	Time since previous intervention
+●	POEM procedural characteristics
+●	Follow-up duration
+●	Clinical outcomes
+●	Safety outcomes
+Risk of Bias Assessment
+The methodological quality of observational studies will be assessed using the Newcastle–Ottawa Scale (NOS).
+Randomized studies, if identified, will be evaluated using the Cochrane Risk of Bias 2 tool.
+Statistical Analysis
+Meta-analysis will be conducted using R (meta/metafor packages) or Comprehensive Meta-Analysis software.
+For dichotomous outcomes, pooled proportions with 95% confidence intervals will be calculated using a random-effects model.
+Continuous outcomes will be synthesized using pooled mean differences or standardized mean differences where appropriate.
+Between-study heterogeneity will be assessed using Cochran’s Q test and the I² statistic.
+Publication bias will be evaluated using funnel plots and Egger’s regression test when sufficient studies (≥10) are available.
+Sensitivity analyses will be performed by excluding studies with high risk of bias and by leave-one-out analysis.
+Subgroup analyses will be considered according to:
+●	Type of previous intervention
+●	Geographic region
+●	Study design
+●	Follow-up duration
+●	Achalasia subtype
+
+
+Relevant Links
+
+Parent Meta: https://pubmed.ncbi.nlm.nih.gov/32616678/
