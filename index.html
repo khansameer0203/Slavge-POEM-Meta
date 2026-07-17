@@ -1,97 +1,329 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>Salvage POEM Protocol</title></head><body>
-<p>Updated Systematic Review and Meta-analysis of the Efficacy and Safety of Peroral Endoscopic Myotomy in Achalasia Patients with Failed Previous Interventions</p>
-<p>Background</p>
-<p>Achalasia is a rare primary esophageal motility disorder characterized by impaired relaxation of the lower esophageal sphincter and absent esophageal peristalsis. While treatment modalities such as pneumatic dilation, laparoscopic Heller myotomy, botulinum toxin injection, and prior peroral endoscopic myotomy (POEM) provide symptomatic relief, treatment failure remains a significant clinical challenge, necessitating salvage interventions.</p>
-<p>Peroral endoscopic myotomy has emerged as an effective minimally invasive option for patients with persistent or recurrent symptoms following previous interventions. In 2021, Tan et al. published the first comprehensive systematic review and meta-analysis evaluating the efficacy and safety of POEM in patients with failed prior treatment. Their review included studies published through 2019 and demonstrated high technical and clinical success with acceptable adverse event rates.</p>
-<p>Since then, numerous additional studies with larger cohorts and longer follow-up periods have been published. Preliminary literature screening has identified at least fifteen eligible studies published after 2019, representing approximately a 36% increase in cumulative sample size compared with the previous review. These newer studies may substantially improve the precision of pooled estimates and provide updated evidence regarding clinical efficacy, durability, adverse events, and reflux outcomes.</p>
-<p>An updated systematic review and meta-analysis is therefore warranted.</p>
-<p>PICO</p>
-<p>Population</p>
-<p>Patients with achalasia who previously underwent any one or more failed therapeutic interventions.</p>
-<p>Intervention</p>
-<p>Salvage Peroral endoscopic myotomy (POEM).</p>
-<p>Comparator</p>
-<p>Where available:</p>
-<p>Treatment-naïve patients</p>
-<p>Alternative salvage procedures</p>
-<p>Different prior intervention groups</p>
-<p>Studies without comparators are also eligible.</p>
-<p>Outcomes</p>
-<p>Primary outcomes:</p>
-<p>Technical success</p>
-<p>Clinical success</p>
-<p>Secondary outcomes:</p>
-<p>Will be decided on the reporting frequency of the screened literature.</p>
-<p>Eligibility Criteria</p>
-<p>Inclusion Criteria</p>
-<p>Adult patients with achalasia</p>
-<p>Previous failed intervention before POEM</p>
-<p>Original clinical studies</p>
-<p>Prospective or retrospective cohort studies</p>
-<p>Randomized trials</p>
-<p>Studies reporting at least one outcome of interest</p>
-<p>Exclusion Criteria</p>
-<p>Case reports</p>
-<p>Case series with fewer than 10 patients</p>
-<p>Reviews</p>
-<p>Editorials</p>
-<p>Conference abstracts without sufficient data</p>
-<p>Animal studies</p>
-<p>Pediatric-only populations</p>
-<p>Information Sources</p>
-<p>The following databases will be searched:</p>
-<p>PubMed/MEDLINE</p>
-<p>Embase</p>
-<p>Scopus</p>
-<p>Web of Science</p>
-<p>Cochrane Library</p>
-<p>Reference lists of included studies and previous systematic reviews will also be screened.</p>
-<p>Search Strategy</p>
-<p>Searches will combine controlled vocabulary and free-text terms related to:</p>
-<p>Achalasia</p>
-<p>Peroral endoscopic myotomy</p>
-<p>POEM</p>
-<p>Failed treatment</p>
-<p>Recurrent achalasia</p>
-<p>Salvage therapy</p>
-<p>Redo POEM</p>
-<p>Prior intervention</p>
-<p>No language restrictions will be applied where feasible.</p>
-<p>Study Selection</p>
-<p>The review process will be reported according to PRISMA 2020 guidelines.</p>
-<p>Two independent reviewers will screen titles and abstracts, followed by full-text assessment. Disagreements will be resolved through consensus or consultation with a third reviewer. Invite Link to the screening software has been sent to the relevant authors.</p>
-<p>Data Extraction</p>
-<p>Data extracted will include:</p>
-<p>Study characteristics</p>
-<p>Country</p>
-<p>Study design</p>
-<p>Enrollment period</p>
-<p>Sample size</p>
-<p>Mean age</p>
-<p>Sex</p>
-<p>Achalasia subtype</p>
-<p>Previous intervention type</p>
-<p>Time since previous intervention</p>
-<p>POEM procedural characteristics</p>
-<p>Follow-up duration</p>
-<p>Clinical outcomes</p>
-<p>Safety outcomes</p>
-<p>Risk of Bias Assessment</p>
-<p>The methodological quality of observational studies will be assessed using the Newcastle–Ottawa Scale (NOS).</p>
-<p>Randomized studies, if identified, will be evaluated using the Cochrane Risk of Bias 2 tool.</p>
-<p>Statistical Analysis</p>
-<p>Meta-analysis will be conducted using R (meta/metafor packages) or Comprehensive Meta-Analysis software.</p>
-<p>For dichotomous outcomes, pooled proportions with 95% confidence intervals will be calculated using a random-effects model.</p>
-<p>Continuous outcomes will be synthesized using pooled mean differences or standardized mean differences where appropriate.</p>
-<p>Between-study heterogeneity will be assessed using Cochran’s Q test and the I² statistic.</p>
-<p>Publication bias will be evaluated using funnel plots and Egger’s regression test when sufficient studies (≥10) are available.</p>
-<p>Sensitivity analyses will be performed by excluding studies with high risk of bias and by leave-one-out analysis.</p>
-<p>Subgroup analyses will be considered according to:</p>
-<p>Type of previous intervention</p>
-<p>Geographic region</p>
-<p>Study design</p>
-<p>Follow-up duration</p>
-<p>Achalasia subtype</p>
-<p>Relevant Links</p>
-<p>Parent Meta: https://pubmed.ncbi.nlm.nih.gov/32616678/</p>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Systematic Review & Meta-analysis: Salvage POEM in Achalasia</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --primary-light: #eff6ff;
+            --accent-color: #0284c7;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --success: #10b981;
+            --danger: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-main);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            line-height: 1.25;
+            font-weight: 800;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-dark);
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        /* PICO Grid Table */
+        .pico-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        @media (max-width: 600px) {
+            .pico-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pico-box {
+            background-color: var(--bg-main);
+            border-left: 4px solid var(--accent-color);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .pico-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 5px;
+        }
+
+        /* Criteria Split View */
+        .criteria-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        @media (max-width: 768px) {
+            .criteria-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .criteria-box {
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .criteria-box.inclusion {
+            border-top: 4px solid var(--success);
+            background-color: #f0fdf4;
+        }
+
+        .criteria-box.exclusion {
+            border-top: 4px solid var(--danger);
+            background-color: #fef2f2;
+        }
+
+        .criteria-box h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .criteria-box.inclusion h3 { color: #166534; }
+        .criteria-box.exclusion h3 { color: #991b1b; }
+
+        /* Links Section */
+        .links-box {
+            background: var(--primary-light);
+            border: 1px solid #bfdbfe;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .links-box a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge">Research Protocol</span>
+        <h1>Updated Systematic Review and Meta-analysis of the Efficacy and Safety of Peroral Endoscopic Myotomy in Achalasia Patients with Failed Previous Interventions</h1>
+    </header>
+
+    <section id="background">
+        <h2>Background</h2>
+        <p>Achalasia is a rare primary esophageal motility disorder characterized by impaired relaxation of the lower esophageal sphincter and absent esophageal peristalsis. While treatment modalities such as pneumatic dilation, laparoscopic Heller myotomy, botulinum toxin injection, and prior peroral endoscopic myotomy (POEM) provide symptomatic relief, treatment failure remains a significant clinical challenge, necessitating salvage interventions.</p>
+        <p>Peroral endoscopic myotomy has emerged as an effective minimally invasive option for patients with persistent or recurrent symptoms following previous interventions. In 2021, Tan et al. published the first comprehensive systematic review and meta-analysis evaluating the efficacy and safety of POEM in patients with failed prior treatment. Their review included studies published through 2019 and demonstrated high technical and clinical success with acceptable adverse event rates.</p>
+        <p>Since then, numerous additional studies with larger cohorts and longer follow-up periods have been published. Preliminary literature screening has identified at least fifteen eligible studies published after 2019, representing approximately a 36% increase in cumulative sample size compared with the previous review. These newer studies may substantially improve the precision of pooled estimates and provide updated evidence regarding clinical efficacy, durability, adverse events, and reflux outcomes.</p>
+        <p>An updated systematic review and meta-analysis is therefore warranted.</p>
+    </section>
+
+    <section id="pico">
+        <h2>PICO Framework</h2>
+        <div class="pico-container">
+            <div class="pico-box">
+                <div class="pico-title">Population</div>
+                <p style="margin:0; text-align:left;">Patients with achalasia who previously underwent any one or more failed therapeutic interventions.</p>
+            </div>
+            <div class="pico-box">
+                <div class="pico-title">Intervention</div>
+                <p style="margin:0; text-align:left;">Salvage Peroral endoscopic myotomy (POEM).</p>
+            </div>
+            <div class="pico-box">
+                <div class="pico-title">Comparator</div>
+                <p style="margin:0; text-align:left;">Where available: Treatment-naïve patients, alternative salvage procedures, or different prior intervention groups. (Studies without comparators are also eligible).</p>
+            </div>
+            <div class="pico-box">
+                <div class="pico-title">Outcomes</div>
+                <p style="margin:0; text-align:left;"><strong>Primary:</strong> Technical success, Clinical success.<br><strong>Secondary:</strong> Decided based on reporting frequency in screened literature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="eligibility">
+        <h2>Eligibility Criteria</h2>
+        <div class="criteria-container">
+            <div class="criteria-box inclusion">
+                <h3>Inclusion Criteria</h3>
+                <ul>
+                    <li>Adult patients with achalasia</li>
+                    <li>Previous failed intervention before POEM</li>
+                    <li>Original clinical studies</li>
+                    <li>Prospective or retrospective cohort studies</li>
+                    <li>Randomized trials</li>
+                    <li>Studies reporting at least one outcome of interest</li>
+                </ul>
+            </div>
+            <div class="criteria-box exclusion">
+                <h3>Exclusion Criteria</h3>
+                <ul>
+                    <li>Case reports</li>
+                    <li>Case series with fewer than 10 patients</li>
+                    <li>Reviews, editorials, and letters</li>
+                    <li>Conference abstracts without sufficient data</li>
+                    <li>Animal studies</li>
+                    <li>Pediatric-only populations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="search-strategy">
+        <h2>Information Sources & Search Strategy</h2>
+        <h3>Databases to be Searched</h3>
+        <ul>
+            <li>PubMed/MEDLINE</li>
+            <li>Embase</li>
+            <li>Scopus</li>
+            <li>Web of Science</li>
+            <li>Cochrane Library</li>
+            <li>Reference lists of included studies and previous systematic reviews</li>
+        </ul>
+        <h3>Search Terms</h3>
+        <p>Searches will combine controlled vocabulary and free-text terms related to: <em>Achalasia, Peroral endoscopic myotomy, POEM, Failed treatment, Recurrent achalasia, Salvage therapy, Redo POEM, Prior intervention</em>. No language restrictions will be applied where feasible.</p>
+    </section>
+
+    <section id="methodology">
+        <h2>Study Selection & Data Extraction</h2>
+        <h3>Study Selection Process</h3>
+        <p>The review process will be reported according to the <strong>PRISMA 2020 guidelines</strong>. Two independent reviewers will screen titles and abstracts, followed by full-text assessment. Disagreements will be resolved through consensus or consultation with a third reviewer. Invite links to the screening software have been distributed to the relevant authors.</p>
+        
+        <h3>Data Extraction Fields</h3>
+        <p>Data extracted will include:</p>
+        <ul>
+            <li><strong>Study characteristics:</strong> Country, design, enrollment period, sample size, mean age, sex, achalasia subtype, previous intervention type, and time since previous intervention.</li>
+            <li><strong>Procedural & clinical outcomes:</strong> POEM procedural characteristics, follow-up duration, clinical outcomes, and safety outcomes.</li>
+        </ul>
+
+        <h3>Risk of Bias Assessment</h3>
+        <ul>
+            <li>The methodological quality of observational studies will be assessed using the <strong>Newcastle–Ottawa Scale (NOS)</strong>.</li>
+            <li>Randomized studies, if identified, will be evaluated using the <strong>Cochrane Risk of Bias 2 (RoB 2) tool</strong>.</li>
+        </ul>
+    </section>
+
+    <section id="statistical-analysis">
+        <h2>Statistical Analysis</h2>
+        <p>Meta-analysis will be conducted using <strong>R (meta/metafor packages)</strong> or <strong>Comprehensive Meta-Analysis software</strong>.</p>
+        <ul>
+            <li><strong>Dichotomous outcomes:</strong> Pooled proportions with 95% confidence intervals (CI) will be calculated using a random-effects model.</li>
+            <li><strong>Continuous outcomes:</strong> Synthesized using pooled mean differences or standardized mean differences where appropriate.</li>
+            <li><strong>Heterogeneity:</strong> Assessed using Cochran’s Q test and the I² statistic.</li>
+            <li><strong>Publication bias:</strong> Evaluated using funnel plots and Egger’s regression test when sufficient studies (≥10) are available.</li>
+            <li><strong>Sensitivity analyses:</strong> Performed by excluding studies with high risk of bias and by leave-one-out analysis.</li>
+        </ul>
+        <h3>Subgroup Analyses</h3>
+        <p>Subgroup analyses will be considered according to the type of previous intervention, geographic region, study design, follow-up duration, and achalasia subtype.</p>
+    </section>
+
+    <div class="links-box">
+        <h3>Relevant Links & References</h3>
+        <p style="margin:0;">Parent Meta-Analysis: <a href="https://pubmed.ncbi.nlm.nih.gov/32616678/" target="_blank">Tan et al. 2021 (PubMed)</a></p>
+    </div>
+
+    <footer>
+        <p>Systematic Review & Meta-analysis Protocol • Designed for GitHub Pages</p>
+    </footer>
+</div>
+
+</body>
+</html>
